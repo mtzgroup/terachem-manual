@@ -7,3 +7,8 @@
 * [Getting Started](getting-started/README.md)
   * [System Requirements](getting-started/system-requirements.md)
   * [Installation](getting-started/installation.md)
+  * [Environment Variables](getting-started/environment-variables.md)
+  * [Licensing](getting-started/licensing.md)
+  * [Updating TeraChem](getting-started/updating-terachem.md)
+  * [Command Line Options](getting-started/command-line-options.md)
+* [Running Sample Jobs](running-sample-jobs.md)

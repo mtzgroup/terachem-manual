@@ -41,3 +41,22 @@ cd TCInstaller
 chmod u+x install
 ./install
 ```
+
+This script will verify that your machine has a suitable graphics card, verify that you accept the license terms, and install the software in a location of your choosing (the “TeraChem installation directory” or instdir in the following). The script will create SetTCVars.sh which sets the appropriate environment variables. You can add source $TeraChem/SetTCVars.sh to your shell configuration file (which is $HOME/.bashrc if you use the bash shell) to automatically configure the TeraChem environment at every new login session. The install script will also put a temporary license file in place so you can begin using TeraChem immediately. However, this temporary license file is time-limited, so you will want to obtain a permanent license file. The install script ends with a form suitable for emailing to help@petachem.com:
+
+```
+-------------BEGIN HERE------------------
+Institution: ______________________
+Ordered By: _______________________
+MAC: 003048DB1D7E
+IP: 171.64.125.189
+---------------END HERE------------------
+```
+
+You can regenerate this at any time by typing
+
+```
+$TeraChem/bin/machid
+```
+
+Fill in the “Institution” and “Ordered By” fields and email to help@petachem.com. When we receive this from you, we will send you a permanent license file (which should be saved as license.dat in the TeraChem installation directory) within a few days. The TeraChem environment variable indicates where the licensing file can be found, i.e. $TeraChem/license.dat.
