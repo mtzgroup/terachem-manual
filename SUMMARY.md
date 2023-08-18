@@ -11,4 +11,4 @@
   * [Licensing](getting-started/licensing.md)
   * [Updating TeraChem](getting-started/updating-terachem.md)
   * [Command Line Options](getting-started/command-line-options.md)
-* [Running Sample Jobs](running-sample-jobs.md)
+  * [Running Sample Jobs](getting-started/running-sample-jobs.md)
