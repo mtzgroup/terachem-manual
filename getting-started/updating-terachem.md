@@ -20,8 +20,6 @@ The installer has been saved as tc1.93P.tar
 
 In order to prevent potential data corruption issues, it is recommended to install the release in another directory and then follow the standard installation procedure described in Sec. 2.2. If a newer version is available, TeraChem notifies the user on startup:
 
-_TRYING THE NETWORK LICENSE..._
-
 ```
 TRYING THE NETWORK LICENSE...
 Connecting to license server ’54.208.252.40’ port ’8877’...

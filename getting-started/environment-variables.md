@@ -10,11 +10,8 @@ There are several environment variables that influence TeraChem:
 export CUDA_VISIBLE_DEVICES=0,2
 ```
 
-
-
-**MagmaMinN** : Matrices of size NxN and larger will be diagonalized using MAGMA routines (where N is the value of the environment variable).
-
-5\. **MagmaNGPUs** : When MAGMA is used, it will exploit N GPUs (where N is the value of the environment variable). These GPUs will be the first N which TeraChem sees. Please note that these are NOT necessarily the same as the GPUs which TeraChem is using for the electronic structure. As discussed below, you can control the GPUs which TeraChem uses either in the input file or through the command line. However, MAGMA will not respect that list. So, for example, if you run TeraChem as
+* **MagmaMinN** : Matrices of size NxN and larger will be diagonalized using MAGMA routines (where N is the value of the environment variable).
+* **MagmaNGPUs** : When MAGMA is used, it will exploit N GPUs (where N is the value of the environment variable). These GPUs will be the first N which TeraChem sees. Please note that these are NOT necessarily the same as the GPUs which TeraChem is using for the electronic structure. As discussed below, you can control the GPUs which TeraChem uses either in the input file or through the command line. However, MAGMA will not respect that list. So, for example, if you run TeraChem as
 
 ```
 terachem --gpus=23 start.in
