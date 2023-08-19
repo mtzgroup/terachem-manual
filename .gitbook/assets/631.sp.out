@@ -1,51 +1,3 @@
-# Running Sample Jobs
-
-The TeraChem package contains several sample jobs located at
-
-```
-instdir/TeraChem/TCExamples
-```
-
-After installation, cd to the caffeine directory and run TeraChem by typing
-
-```
-source instdir/TeraChem/SetTCVars.sh
-instdir/TeraChem/bin/terachem start.sp
-```
-
-where **instdir** is the installation directory you chose during the install (defaults to your home directory) and **start.sp** is the name of a TeraChem input file. Note that the environment variable **TeraChem** is set by “source’ing” **SetTCVars.sh**. This is needed in order for TeraChem to locate the license and basis set library files.
-
-The **start.sp** file contains the required parameters of the job (including the filename of the file which contains the atomic coordinates for the molecule of interest). Most of the parameters have default values.
-
-The complete list of parameters available in this version is presented in Section 8. An example of the configuration file used for single point energy calculations of caffeine with the BLYP functional, DFT-D dispersion corrections, and the 6-31G\* basis set is
-
-{% code title="start.631.sp" %}
-```
-# Job: Single point energy of caffeine
-#
-# basis set
-basis 6-31g*
-# coordinates file
-coordinates caffeine.xyz
-# molecule charge
-charge 0
-# SCF method (rhf/blyp/b3lyp/etc...): DFT-BLYP
-method blyp
-# add dispersion correction (DFT-D)
-dftd yes
-# type of the job (energy/gradient/md/minimize/ts): energy
-run energy
-end
-```
-{% endcode %}
-
-All lines beginning with the ‘#’ character are considered comments and are ignored by TeraChem. There is no requirement on the line ordering in the start file except that the last line should be ‘end’.
-
-Below is the output from this example job. The program first lists the parameters followed by all GPUs used in the job. Each GPU has its amount of memory and compute capability printed next to it. The program then attempts to predict the maximum size of the molecule that can be handled on the current machine based on the amount of available CPU and GPU memory. Note that the recommended maximum size of the system is approximate. The SCF procedure, which includes the DIIS error (the maximum component of the DIIS error vector), integrated number of electrons, exchange-correlation energy, SCF energy, and the total time elapsed per iteration, completes the program’s output.
-
-{% code title="631.sp.out" fullWidth="true" %}
-```
-// Some code
 | Startfile from command line: start.631.sp
 
 
@@ -277,6 +229,3 @@ Running Mulliken population analysis...
 
 | Job finished: Sat Aug 19 12:23:23 2023
 
-
-```
-{% endcode %}
