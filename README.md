@@ -19,7 +19,7 @@ TeraChem is general purpose quantum chemistry software designed to run on Nvidia
 10. Support of multiple-GPU systems
 11. Single/Dynamical/Double precision accuracy
 12. QM/MM treatment of surrounding water molecules using [TIP3P ](#user-content-fn-1)[^1]force field
-13. Natural bond orbital analysis through integration with NBO6
+13. Natural bond orbital analysis through integration with [NBO6](https://nbo6.chem.wisc.edu/webnbo\_css.htm)
 14. Polarizabilities for HF and closed-shell DFT methods
 15. Runs on up to 16 GPUs in the same node in parallel, not parallelized to run on multiple nodes
 
