@@ -10,7 +10,7 @@ TeraChem is general purpose quantum chemistry software designed to run on Nvidia
 6. Empirical dispersion correction (DFT-D3 and DFT-D2)
 7. Polarizable Continuum Models for solvation
 8. Geometry optimization (L-BFGS, Conjugate gradient, Steepest descent)
-   1. The optimization can be carried out either in Cartesian or internal coordinates as specified in the start file (all input geometries are provided in Cartesians). The Cartesian ! internal ! Cartesian coordinate transformation is performed automatically whenever required.
+   1. The optimization can be carried out either in Cartesian or internal coordinates as specified in the start file (all input geometries are provided in Cartesians). The Cartesian->internal->   Cartesian coordinate transformation is performed automatically whenever required.
    2. Constrained optimization with frozen atoms, constrained bond lengths, angles, and dihedrals.
    3. Transition state search (Nudged elastic band) in internal and Cartesian coordinates
 9. Ab initio molecular dynamics (NVE, NVT ensembles)
