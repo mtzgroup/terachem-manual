@@ -23,4 +23,4 @@ TeraChem is general purpose quantum chemistry software designed to run on Nvidia
 14. Polarizabilities for HF and closed-shell DFT methods
 15. Runs on up to 16 GPUs in the same node in parallel, not parallelized to run on multiple nodes
 
-[^1]: W. L. Jorgensen, J. Chandrasekha, J. D. Madura, R. W. Impey, and M. L. Klein, J. Chem. Phys. \*79\* 926 (1983)
+[^1]: W. L. Jorgensen, J. Chandrasekha, J. D. Madura, R. W. Impey, and M. L. Klein, J. Chem. Phys. **79** 926 (1983)
