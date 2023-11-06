@@ -18,3 +18,4 @@
 * [TeraChem I/O File Formats](terachem-i-o-file-formats/README.md)
   * [Input Files](terachem-i-o-file-formats/input-files.md)
   * [Atomic Coordinates](terachem-i-o-file-formats/atomic-coordinates.md)
+* [Diffraction Signals](diffraction-signals.md)
